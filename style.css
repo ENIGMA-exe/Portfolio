@@ -383,7 +383,7 @@ nav>ul>li:last-child:hover{
     /* border: 1px solid black; */
 }
 .workexp>.content{
-    width: 60%;
+    width: 75%;
     height: 80%;
     margin: 5% auto;
     display: flex;
