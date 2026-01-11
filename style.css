@@ -306,12 +306,13 @@ nav>ul>li:last-child:hover{
 .skills>.content{
     width: 90%;
     height: 90%;
-    /* border: 1px solid black; */
     margin: 0 5%;
-    /* display: inline-flex;
-    overflow: hidden; */
-    /* background: rgba(238, 130, 238, 0.384); */
-    /* padding: 2% 5%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
 }
 .skills>.content>.card{
     width: 10%;
