@@ -14,8 +14,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    /* transition: 0.5s; */
-    scroll-behavior: smooth;
+    transition: 0.3s;
+    /*scroll-behavior: smooth;*/
 }
 body{
     width: 100%;
@@ -734,4 +734,463 @@ nav>ul>li:last-child:hover{
     height: 30%;
     margin-top: 2%;
     background: var(--white);
+}
+
+
+/* 
+================================
+RESPONSIVE STYLES - MEDIA QUERIES
+================================ 
+*/
+
+/* Large Screens / Small Laptops (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+    nav > ul {
+        width: 60%;
+    }
+    .intro > h1 {
+        font-size: 4rem;
+    }
+    .intro > h2 {
+        font-size: 4rem;
+    }
+    .intro > p {
+        width: 70%;
+    }
+    .skills > .content > .card {
+        width: 12%;
+    }
+    .project-a > .details > .pabout,
+    .project-b > .details > .pabout {
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets Landscape (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    nav > .logo {
+        width: 8%;
+    }
+    nav > ul {
+        width: 70%;
+    }
+    .left-section,
+    .right-section {
+        display: none;
+    }
+    .mid-section {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .intro > h1 {
+        font-size: 3.5rem;
+    }
+    .intro > h2 {
+        font-size: 3.5rem;
+    }
+    .intro > p {
+        width: 80%;
+    }
+    .intro > a > button {
+        width: 25%;
+    }
+    .about-me > .content > img {
+        height: 40%;
+    }
+    .skills > .content > .card {
+        width: 15%;
+        height: 18%;
+    }
+    .workexp > .content {
+        width: 90%;
+    }
+    .project-a > img,
+    .project-b > img {
+        width: 60%;
+    }
+    .project-a > .details,
+    .project-b > .details {
+        width: 55%;
+    }
+}
+
+/* Tablets Portrait (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 3%;
+        height: auto;
+        min-height: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    nav > .logo {
+        width: 50px;
+        height: 50px;
+    }
+    nav > .logo > img {
+        width: 100%;
+    }
+    nav > ul {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+    }
+    nav > ul > li {
+        padding: 5px 10px;
+    }
+    nav > ul > li:last-child {
+        height: auto;
+        padding: 8px 15px;
+    }
+    .container {
+        height: auto;
+        min-height: 90%;
+    }
+    .mid-section {
+        padding: 0 3%;
+    }
+    .mid-section > .intro {
+        padding-left: 5%;
+        min-height: 80vh;
+    }
+    .intro > h5 {
+        font-size: 1rem;
+    }
+    .intro > h1 {
+        font-size: 2.5rem;
+    }
+    .intro > h2 {
+        font-size: 2.5rem;
+    }
+    .intro > p {
+        width: 95%;
+        font-size: 1rem;
+    }
+    .intro > a > button {
+        width: 40%;
+        height: auto;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+    .mid-section > .about-me{
+        height: 60vh;
+    }
+    .about-me > .heading,
+    .skills > .heading,
+    .workexp > .heading,
+    .mid-section > .heading {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+    .about-me > .heading > .line,
+    .skills > .heading > .line,
+    .workexp > .heading > .line,
+    .mid-section > .heading > .line {
+        width: 30%;
+    }
+    .about-me > .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me > .content > p {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5%;
+    }
+    .about-me > .content > img {
+        width: 60%;
+        height: auto;
+    }
+    .mid-section > .skills{
+        height: auto;
+        padding: 30px 0;
+    }
+    .mid-section > .skills > .heading{
+        margin-bottom: 30px;
+    }
+    .skills > .content > .card {
+        width: 14%;
+        height: 120px;
+        margin: 1%;
+    }
+    .skills > .content > .card > .card-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .skills > .content > .card > .card-logo > i {
+        font-size: 2rem;
+    }
+    .skills > .content > .card > p {
+        font-size: 0.85rem;
+    }
+    .workexp > .content {
+        flex-direction: column;
+        width: 95%;
+    }
+    .workexp > .content > ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .workexp > .content > ul > li {
+        border-left: none;
+        border-bottom: 2px solid var(--gray-white);
+        padding: 10px 15px;
+    }
+    .workexp > .content > ul > li:hover {
+        border-left: none;
+        border-bottom: 2px solid var(--green);
+    }
+    .workexp > .content > .detail {
+        width: 100%;
+    }
+    .mid-section > .project-a,
+    .mid-section > .project-b {
+        height: auto;
+        min-height: 500px;
+    }
+    .project-a > img,
+    .project-b > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        opacity: 0.3;
+    }
+    .project-a > .details,
+    .project-b > .details {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        align-items: center;
+    }
+    .project-a > .details > .pabout,
+    .project-b > .details > .pabout {
+        text-align: center;
+        background: rgba(1, 9, 20, 0.9);
+    }
+    .project-a > .details > ul,
+    .project-b > .details > ul {
+        justify-content: center;
+    }
+    .contact > h1 {
+        font-size: 2.5rem;
+    }
+    .contact > p {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .contact > a {
+        width: 30%;
+        height: auto;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    .mid-section > footer {
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* Mobile Phones (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 10px 2%;
+    }
+    nav > .logo {
+        width: 40px;
+        height: 40px;
+    }
+    nav > ul {
+        gap: 5px;
+    }
+    nav > ul > li {
+        padding: 3px 6px;
+        font-size: 0.8rem;
+    }
+    nav > ul > li > span {
+        display: none;
+    }
+    nav > ul > li:last-child {
+        padding: 6px 10px;
+    }
+    .mid-section > .intro {
+        padding-left: 3%;
+        padding-right: 3%;
+        min-height: 60vh;
+    }
+    .intro > h5 {
+        font-size: 0.9rem;
+    }
+    .intro > h1 {
+        font-size: 1.8rem;
+    }
+    .intro > h2 {
+        font-size: 1.6rem;
+    }
+    .intro > p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .intro > a > button {
+        width: 50%;
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+    .about-me > .heading,
+    .skills > .heading,
+    .workexp > .heading,
+    .mid-section > .heading {
+        font-size: 1rem;
+    }
+    .about-me > .heading > .line,
+    .skills > .heading > .line,
+    .workexp > .heading > .line,
+    .mid-section > .heading > .line {
+        width: 20%;
+        display: none;
+    }
+    .about-me > .content > p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .about-me > .content > img {
+        width: 80%;
+    }
+    .skills > .content {
+        justify-content: center;
+    }
+    .skills > .content > .card {
+        width: 28%;
+        height: 100px;
+        margin: 1.5%;
+    }
+    .skills > .content > .card > .card-logo {
+        width: 40px;
+        height: 40px;
+    }
+    .skills > .content > .card > .card-logo > i {
+        font-size: 1.5rem;
+    }
+    .skills > .content > .card > .card-logo > img {
+        width: 80%;
+    }
+    .skills > .content > .card > p {
+        font-size: 0.7rem;
+    }
+    .workexp > .content > ul > li {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+    .workexp > .content > .detail > .name {
+        font-size: 1.1rem;
+    }
+    .workexp > .content > .detail > .duration {
+        font-size: 0.9rem;
+    }
+    .workexp > .content > .detail > ul > li {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .workexp > .content > .detail > ul > li > a {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        margin-right: 10px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .mid-section > .project-a,
+    .mid-section > .project-b {
+        min-height: 400px;
+    }
+    .project-a > .details > .name,
+    .project-b > .details > .name {
+        font-size: 1.2rem;
+    }
+    .project-a > .details > .pabout,
+    .project-b > .details > .pabout {
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+    .project-a > .details > ul > li,
+    .project-b > .details > ul > li {
+        font-size: 0.8rem;
+        padding: 5px;
+        margin: 2px;
+    }
+    .contact > h5 {
+        font-size: 0.9rem;
+    }
+    .contact > h1 {
+        font-size: 2rem;
+    }
+    .contact > p {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+    .contact > a {
+        width: 50%;
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+    .mid-section > footer {
+        font-size: 0.9rem;
+        height: auto;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 513px){
+    .mid-section > .skills {
+        margin-top: 20%;
+    }
+}
+
+/* Extra Small Devices (max-width: 400px) */
+@media screen and (max-width: 400px) {
+    nav > ul > li {
+        font-size: 0.7rem;
+        padding: 2px 4px;
+    }
+    nav > ul > li:last-child {
+        padding: 5px 8px;
+    }
+    .intro > h1 {
+        font-size: 1.5rem;
+    }
+    .intro > h2 {
+        font-size: 1.3rem;
+    }
+    .intro > a > button {
+        width: 60%;
+    }
+    .mid-section > .about-me {
+        height: auto;
+    }
+    .mid-section > .about-me > .heading{
+        margin-bottom: 10px;
+    }
+    .mid-section > .skills >.heading{
+        font-size: 0.85rem;
+    }
+    .skills > .content > .card {
+        width: 42%;
+        height: 90px;
+    }
+    .contact > a {
+        width: 60%;
+    }
 }
