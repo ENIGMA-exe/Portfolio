@@ -878,7 +878,7 @@ RESPONSIVE STYLES - MEDIA QUERIES
         font-size: 1.2rem;
     }
     .mid-section > .about-me{
-        height: 60vh;
+        height: auto;
     }
     .about-me > .heading,
     .skills > .heading,
